@@ -1,0 +1,9 @@
+myjaffle:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      extensions:
+        - postgres_scanner
+      plugins:
+        - module: plugins.attach_postgres_schemas
